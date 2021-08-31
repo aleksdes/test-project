@@ -1,0 +1,980 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?tp6cuf');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?tp6cuf#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?tp6cuf') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?tp6cuf') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?tp6cuf##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-tokenoshi_"], [class*=" icon-tokenoshi_"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tokenoshi_twitter {
+  &:before {
+    content: $icon-tokenoshi_twitter; 
+  }
+}
+.icon-tokenoshi_tokenoshi-logo {
+  &:before {
+    content: $icon-tokenoshi_tokenoshi-logo; 
+  }
+}
+.icon-tokenoshi_fi-rr-add {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-add; 
+  }
+}
+.icon-tokenoshi_fi-rr-align-center {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-align-center; 
+  }
+}
+.icon-tokenoshi_fi-rr-align-justify {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-align-justify; 
+  }
+}
+.icon-tokenoshi_fi-rr-align-left {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-align-left; 
+  }
+}
+.icon-tokenoshi_fi-rr-align-right {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-align-right; 
+  }
+}
+.icon-tokenoshi_fi-rr-angle-double-left {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-angle-double-left; 
+  }
+}
+.icon-tokenoshi_fi-rr-angle-double-right {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-angle-double-right; 
+  }
+}
+.icon-tokenoshi_fi-rr-angle-double-small-left {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-angle-double-small-left; 
+  }
+}
+.icon-tokenoshi_fi-rr-angle-double-small-right {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-angle-double-small-right; 
+  }
+}
+.icon-tokenoshi_fi-rr-angle-down {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-angle-down; 
+  }
+}
+.icon-tokenoshi_fi-rr-angle-left {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-angle-left; 
+  }
+}
+.icon-tokenoshi_fi-rr-angle-right {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-angle-right; 
+  }
+}
+.icon-tokenoshi_fi-rr-angle-small-down {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-angle-small-down; 
+  }
+}
+.icon-tokenoshi_fi-rr-angle-small-left {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-angle-small-left; 
+  }
+}
+.icon-tokenoshi_fi-rr-angle-small-right {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-angle-small-right; 
+  }
+}
+.icon-tokenoshi_fi-rr-angle-small-up {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-angle-small-up; 
+  }
+}
+.icon-tokenoshi_fi-rr-angle-up {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-angle-up; 
+  }
+}
+.icon-tokenoshi_fi-rr-apps {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-apps; 
+  }
+}
+.icon-tokenoshi_fi-rr-apps-add {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-apps-add; 
+  }
+}
+.icon-tokenoshi_fi-rr-apps-delete {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-apps-delete; 
+  }
+}
+.icon-tokenoshi_fi-rr-apps-sort {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-apps-sort; 
+  }
+}
+.icon-tokenoshi_fi-rr-arrow-down {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-arrow-down; 
+  }
+}
+.icon-tokenoshi_fi-rr-arrow-left {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-arrow-left; 
+  }
+}
+.icon-tokenoshi_fi-rr-arrow-right {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-arrow-right; 
+  }
+}
+.icon-tokenoshi_fi-rr-arrow-small-down {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-arrow-small-down; 
+  }
+}
+.icon-tokenoshi_fi-rr-arrow-small-left {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-arrow-small-left; 
+  }
+}
+.icon-tokenoshi_fi-rr-arrow-small-right {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-arrow-small-right; 
+  }
+}
+.icon-tokenoshi_fi-rr-arrow-small-up {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-arrow-small-up; 
+  }
+}
+.icon-tokenoshi_fi-rr-arrow-up {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-arrow-up; 
+  }
+}
+.icon-tokenoshi_fi-rr-bell {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-bell; 
+  }
+}
+.icon-tokenoshi_fi-rr-bell-ring {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-bell-ring; 
+  }
+}
+.icon-tokenoshi_fi-rr-book {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-book; 
+  }
+}
+.icon-tokenoshi_fi-rr-book-alt {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-book-alt; 
+  }
+}
+.icon-tokenoshi_fi-rr-box-alt {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-box-alt; 
+  }
+}
+.icon-tokenoshi_fi-rr-briefcase {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-briefcase; 
+  }
+}
+.icon-tokenoshi_fi-rr-broom {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-broom; 
+  }
+}
+.icon-tokenoshi_fi-rr-browser {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-browser; 
+  }
+}
+.icon-tokenoshi_fi-rr-brush {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-brush; 
+  }
+}
+.icon-tokenoshi_fi-rr-building {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-building; 
+  }
+}
+.icon-tokenoshi_fi-rr-bulb {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-bulb; 
+  }
+}
+.icon-tokenoshi_fi-rr-calendar {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-calendar; 
+  }
+}
+.icon-tokenoshi_fi-rr-camera {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-camera; 
+  }
+}
+.icon-tokenoshi_fi-rr-caret-down {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-caret-down; 
+  }
+}
+.icon-tokenoshi_fi-rr-caret-left {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-caret-left; 
+  }
+}
+.icon-tokenoshi_fi-rr-caret-right {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-caret-right; 
+  }
+}
+.icon-tokenoshi_fi-rr-caret-up {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-caret-up; 
+  }
+}
+.icon-tokenoshi_fi-rr-check {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-check; 
+  }
+}
+.icon-tokenoshi_fi-rr-checkbox {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-checkbox; 
+  }
+}
+.icon-tokenoshi_fi-rr-circle {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-circle; 
+  }
+}
+.icon-tokenoshi_fi-rr-circle-small {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-circle-small; 
+  }
+}
+.icon-tokenoshi_fi-rr-clip {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-clip; 
+  }
+}
+.icon-tokenoshi_fi-rr-clock {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-clock; 
+  }
+}
+.icon-tokenoshi_fi-rr-cloud {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-cloud; 
+  }
+}
+.icon-tokenoshi_fi-rr-cloud-check {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-cloud-check; 
+  }
+}
+.icon-tokenoshi_fi-rr-cloud-disabled {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-cloud-disabled; 
+  }
+}
+.icon-tokenoshi_fi-rr-cloud-download {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-cloud-download; 
+  }
+}
+.icon-tokenoshi_fi-rr-cloud-share {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-cloud-share; 
+  }
+}
+.icon-tokenoshi_fi-rr-cloud-upload {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-cloud-upload; 
+  }
+}
+.icon-tokenoshi_fi-rr-comment {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-comment; 
+  }
+}
+.icon-tokenoshi_fi-rr-comment-alt {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-comment-alt; 
+  }
+}
+.icon-tokenoshi_fi-rr-copy {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-copy; 
+  }
+}
+.icon-tokenoshi_fi-rr-credit-card {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-credit-card; 
+  }
+}
+.icon-tokenoshi_fi-rr-cross {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-cross; 
+  }
+}
+.icon-tokenoshi_fi-rr-cross-circle {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-cross-circle; 
+  }
+}
+.icon-tokenoshi_fi-rr-cross-small {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-cross-small; 
+  }
+}
+.icon-tokenoshi_fi-rr-cursor {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-cursor; 
+  }
+}
+.icon-tokenoshi_fi-rr-cursor-finger {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-cursor-finger; 
+  }
+}
+.icon-tokenoshi_fi-rr-cursor-plus {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-cursor-plus; 
+  }
+}
+.icon-tokenoshi_fi-rr-document {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-document; 
+  }
+}
+.icon-tokenoshi_fi-rr-document-signed {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-document-signed; 
+  }
+}
+.icon-tokenoshi_fi-rr-dollar {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-dollar; 
+  }
+}
+.icon-tokenoshi_fi-rr-download {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-download; 
+  }
+}
+.icon-tokenoshi_fi-rr-duplicate {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-duplicate; 
+  }
+}
+.icon-tokenoshi_fi-rr-earnings {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-earnings; 
+  }
+}
+.icon-tokenoshi_fi-rr-edit {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-edit; 
+  }
+}
+.icon-tokenoshi_fi-rr-edit-alt {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-edit-alt; 
+  }
+}
+.icon-tokenoshi_fi-rr-envelope {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-envelope; 
+  }
+}
+.icon-tokenoshi_fi-rr-euro {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-euro; 
+  }
+}
+.icon-tokenoshi_fi-rr-exclamation {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-exclamation; 
+  }
+}
+.icon-tokenoshi_fi-rr-expand {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-expand; 
+  }
+}
+.icon-tokenoshi_fi-rr-eye {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-eye; 
+  }
+}
+.icon-tokenoshi_fi-rr-eye-crossed {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-eye-crossed; 
+  }
+}
+.icon-tokenoshi_fi-rr-eye-dropper {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-eye-dropper; 
+  }
+}
+.icon-tokenoshi_fi-rr-file {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-file; 
+  }
+}
+.icon-tokenoshi_fi-rr-file-add {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-file-add; 
+  }
+}
+.icon-tokenoshi_fi-rr-file-ai {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-file-ai; 
+  }
+}
+.icon-tokenoshi_fi-rr-file-check {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-file-check; 
+  }
+}
+.icon-tokenoshi_fi-rr-file-delete {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-file-delete; 
+  }
+}
+.icon-tokenoshi_fi-rr-file-eps {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-file-eps; 
+  }
+}
+.icon-tokenoshi_fi-rr-file-gif {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-file-gif; 
+  }
+}
+.icon-tokenoshi_fi-rr-file-music {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-file-music; 
+  }
+}
+.icon-tokenoshi_fi-rr-file-psd {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-file-psd; 
+  }
+}
+.icon-tokenoshi_fi-rr-fingerprint {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-fingerprint; 
+  }
+}
+.icon-tokenoshi_fi-rr-flame {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-flame; 
+  }
+}
+.icon-tokenoshi_fi-rr-folder {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-folder; 
+  }
+}
+.icon-tokenoshi_fi-rr-folder-add {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-folder-add; 
+  }
+}
+.icon-tokenoshi_fi-rr-forward {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-forward; 
+  }
+}
+.icon-tokenoshi_fi-rr-ftp {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-ftp; 
+  }
+}
+.icon-tokenoshi_fi-rr-gallery {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-gallery; 
+  }
+}
+.icon-tokenoshi_fi-rr-globe {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-globe; 
+  }
+}
+.icon-tokenoshi_fi-rr-headset {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-headset; 
+  }
+}
+.icon-tokenoshi_fi-rr-hourglass {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-hourglass; 
+  }
+}
+.icon-tokenoshi_fi-rr-hourglass-end {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-hourglass-end; 
+  }
+}
+.icon-tokenoshi_fi-rr-indent {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-indent; 
+  }
+}
+.icon-tokenoshi_fi-rr-interlining {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-interlining; 
+  }
+}
+.icon-tokenoshi_fi-rr-interrogation {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-interrogation; 
+  }
+}
+.icon-tokenoshi_fi-rr-key {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-key; 
+  }
+}
+.icon-tokenoshi_fi-rr-keyboard {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-keyboard; 
+  }
+}
+.icon-tokenoshi_fi-rr-label {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-label; 
+  }
+}
+.icon-tokenoshi_fi-rr-line-width {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-line-width; 
+  }
+}
+.icon-tokenoshi_fi-rr-link {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-link; 
+  }
+}
+.icon-tokenoshi_fi-rr-list {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-list; 
+  }
+}
+.icon-tokenoshi_fi-rr-list-check {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-list-check; 
+  }
+}
+.icon-tokenoshi_fi-rr-makeup-brush {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-makeup-brush; 
+  }
+}
+.icon-tokenoshi_fi-rr-marker {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-marker; 
+  }
+}
+.icon-tokenoshi_fi-rr-megaphone {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-megaphone; 
+  }
+}
+.icon-tokenoshi_fi-rr-menu-burger {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-menu-burger; 
+  }
+}
+.icon-tokenoshi_fi-rr-menu-dots {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-menu-dots; 
+  }
+}
+.icon-tokenoshi_fi-rr-menu-dots-vertical {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-menu-dots-vertical; 
+  }
+}
+.icon-tokenoshi_fi-rr-minus {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-minus; 
+  }
+}
+.icon-tokenoshi_fi-rr-minus-small {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-minus-small; 
+  }
+}
+.icon-tokenoshi_fi-rr-mode-landscape {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-mode-landscape; 
+  }
+}
+.icon-tokenoshi_fi-rr-mode-portrait {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-mode-portrait; 
+  }
+}
+.icon-tokenoshi_fi-rr-mouse {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-mouse; 
+  }
+}
+.icon-tokenoshi_fi-rr-music {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-music; 
+  }
+}
+.icon-tokenoshi_fi-rr-music-alt {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-music-alt; 
+  }
+}
+.icon-tokenoshi_fi-rr-pause {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-pause; 
+  }
+}
+.icon-tokenoshi_fi-rr-picture {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-picture; 
+  }
+}
+.icon-tokenoshi_fi-rr-play {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-play; 
+  }
+}
+.icon-tokenoshi_fi-rr-play-alt {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-play-alt; 
+  }
+}
+.icon-tokenoshi_fi-rr-plus {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-plus; 
+  }
+}
+.icon-tokenoshi_fi-rr-plus-small {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-plus-small; 
+  }
+}
+.icon-tokenoshi_fi-rr-pound {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-pound; 
+  }
+}
+.icon-tokenoshi_fi-rr-power {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-power; 
+  }
+}
+.icon-tokenoshi_fi-rr-pulse {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-pulse; 
+  }
+}
+.icon-tokenoshi_fi-rr-quote-right {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-quote-right; 
+  }
+}
+.icon-tokenoshi_fi-rr-refresh {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-refresh; 
+  }
+}
+.icon-tokenoshi_fi-rr-rewind {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-rewind; 
+  }
+}
+.icon-tokenoshi_fi-rr-rotate-right {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-rotate-right; 
+  }
+}
+.icon-tokenoshi_fi-rr-search {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-search; 
+  }
+}
+.icon-tokenoshi_fi-rr-settings {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-settings; 
+  }
+}
+.icon-tokenoshi_fi-rr-settings-sliders {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-settings-sliders; 
+  }
+}
+.icon-tokenoshi_fi-rr-share {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-share; 
+  }
+}
+.icon-tokenoshi_fi-rr-shield {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-shield; 
+  }
+}
+.icon-tokenoshi_fi-rr-shield-check {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-shield-check; 
+  }
+}
+.icon-tokenoshi_fi-rr-shield-exclamation {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-shield-exclamation; 
+  }
+}
+.icon-tokenoshi_fi-rr-shield-interrogation {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-shield-interrogation; 
+  }
+}
+.icon-tokenoshi_fi-rr-shield-plus {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-shield-plus; 
+  }
+}
+.icon-tokenoshi_fi-rr-shop {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-shop; 
+  }
+}
+.icon-tokenoshi_fi-rr-shopping-bag {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-shopping-bag; 
+  }
+}
+.icon-tokenoshi_fi-rr-shopping-bag-add {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-shopping-bag-add; 
+  }
+}
+.icon-tokenoshi_fi-rr-shopping-cart {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-shopping-cart; 
+  }
+}
+.icon-tokenoshi_fi-rr-shopping-cart-add {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-shopping-cart-add; 
+  }
+}
+.icon-tokenoshi_fi-rr-shopping-cart-check {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-shopping-cart-check; 
+  }
+}
+.icon-tokenoshi_fi-rr-shuffle {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-shuffle; 
+  }
+}
+.icon-tokenoshi_fi-rr-sign-in {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-sign-in; 
+  }
+}
+.icon-tokenoshi_fi-rr-sign-out {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-sign-out; 
+  }
+}
+.icon-tokenoshi_fi-rr-spinner {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-spinner; 
+  }
+}
+.icon-tokenoshi_fi-rr-spinner-alt {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-spinner-alt; 
+  }
+}
+.icon-tokenoshi_fi-rr-stats {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-stats; 
+  }
+}
+.icon-tokenoshi_fi-rr-subtitles {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-subtitles; 
+  }
+}
+.icon-tokenoshi_fi-rr-thumbs-down {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-thumbs-down; 
+  }
+}
+.icon-tokenoshi_fi-rr-thumbs-up {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-thumbs-up; 
+  }
+}
+.icon-tokenoshi_fi-rr-time-add {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-time-add; 
+  }
+}
+.icon-tokenoshi_fi-rr-time-check {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-time-check; 
+  }
+}
+.icon-tokenoshi_fi-rr-time-delete {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-time-delete; 
+  }
+}
+.icon-tokenoshi_fi-rr-time-fast {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-time-fast; 
+  }
+}
+.icon-tokenoshi_fi-rr-time-forward {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-time-forward; 
+  }
+}
+.icon-tokenoshi_fi-rr-time-forward-sixty {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-time-forward-sixty; 
+  }
+}
+.icon-tokenoshi_fi-rr-time-forward-ten {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-time-forward-ten; 
+  }
+}
+.icon-tokenoshi_fi-rr-time-half-past {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-time-half-past; 
+  }
+}
+.icon-tokenoshi_fi-rr-time-oclock {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-time-oclock; 
+  }
+}
+.icon-tokenoshi_fi-rr-time-past {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-time-past; 
+  }
+}
+.icon-tokenoshi_fi-rr-time-quarter-past {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-time-quarter-past; 
+  }
+}
+.icon-tokenoshi_fi-rr-time-quarter-to {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-time-quarter-to; 
+  }
+}
+.icon-tokenoshi_fi-rr-time-twenty-four {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-time-twenty-four; 
+  }
+}
+.icon-tokenoshi_fi-rr-trash {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-trash; 
+  }
+}
+.icon-tokenoshi_fi-rr-user {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-user; 
+  }
+}
+.icon-tokenoshi_fi-rr-user-add {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-user-add; 
+  }
+}
+.icon-tokenoshi_fi-rr-user-delete {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-user-delete; 
+  }
+}
+.icon-tokenoshi_fi-rr-user-remove {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-user-remove; 
+  }
+}
+.icon-tokenoshi_fi-rr-users {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-users; 
+  }
+}
+.icon-tokenoshi_fi-rr-user-time {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-user-time; 
+  }
+}
+.icon-tokenoshi_fi-rr-wifi-alt {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-wifi-alt; 
+  }
+}
+.icon-tokenoshi_fi-rr-yen {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-yen; 
+  }
+}
+.icon-tokenoshi_fi-rr-zoom-in {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-zoom-in; 
+  }
+}
+.icon-tokenoshi_fi-rr-zoom-out {
+  &:before {
+    content: $icon-tokenoshi_fi-rr-zoom-out; 
+  }
+}
+.icon-tokenoshi_tokenoshi-full-logo {
+  &:before {
+    content: $icon-tokenoshi_tokenoshi-full-logo; 
+  }
+}
+

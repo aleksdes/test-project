@@ -1,0 +1,80 @@
+//input-placeholder
+.v-input
+  font-size: 13px	
+
+//global-style
+.v-text-field
+  & .v-input__control > .v-input__slot:before, & .v-input__control > .v-input__slot:after 
+    display: none !important
+
+  & input
+    vertical-align: middle 
+    line-height: 50px !important
+
+  &::placeholder
+    font-size: 14px
+
+  & .v-label,&.v-text-field--outlined.v-input--dense .v-label
+    position: absolute
+    color: var(--v-text_colorTextLebel_primary-base)
+    top: 50% 
+    transform: translate(10px, -50%)
+
+    &--active
+      top: 14px
+      transform: translate(0, -100%) scale(0.75)
+
+  //input-autocomplete-border
+  & .v-input__slot
+    border-radius: 4px !important
+    margin-bottom: 4px
+
+  //margin-bootom-message
+  &.v-text-field--enclosed .v-text-field__details
+    margin-bottom: 4px
+
+  //border-input
+  &.v-text-field--outlined.v-input--is-focused fieldset,&.v-text-field--outlined.v-input--has-state fieldset
+    border-width: 1px 
+    
+  //input-active-border-color
+  &.primary--text,.v-label.primary--text
+    color: var(--v-basic_accent-base) !important
+
+  &.v-text-field.v-input.v-text-field--outlined
+    & .v-input__prepend-inner,& .v-input__append-inner
+      margin: 0
+      padding: 0
+      align-self: center
+
+  & .v-input__prepend-inner,& .v-input__append-inner
+    margin: 0
+    padding: 0
+    align-self: center
+
+//input-message
+.myInput-message
+  &_color-red
+    color: var(--v-basic_error-base)
+    font-size: 10px
+
+  &_color-info
+    color: var(--v-basic_info-base)
+    font-size: 10px
+
+
+//myInput-padding
+.myInput
+  &.v-text-field.v-text-field:not(.v-text-field--rounded) > .v-input__control > .v-input__slot > .v-text-field__slot
+    padding: 0 12px
+
+//myInput style element and modifie 
+.myInput
+  &.theme--light.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state) > .v-input__control > .v-input__slot fieldset
+    color: var(--v-border_input-base)
+
+  &_textarea-input
+    &.v-textarea textarea
+      font-size: 13px
+      line-height: 1.3rem
+      margin: 13px 0
