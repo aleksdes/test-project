@@ -27,15 +27,4 @@ export default {
           'validate_phone_invalid'
       ];
     }
-
-    // //Введите имя
-    // firstnameRules() {
-    //   return [v => !!v || 'validate_field_required'];
-    // },
-
-    // //Введите роль
-    // roleRules() {
-    //   return [v => !!v || 'validate_field_required'];
-    // }
-  }
 };
