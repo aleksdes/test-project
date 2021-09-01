@@ -128,6 +128,8 @@ export default {
     }
   },
 
+  emits: ['click'],
+
   computed: {
     styleButton() {
       return {

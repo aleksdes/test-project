@@ -13,7 +13,7 @@
 
       <v-spacer></v-spacer>
 
-      <template #action="{ attrs }">
+      <template #action="{}">
         <v-btn text @click="closeSnackBar(snackbar.id)">
           {{ $t('snack_bar_for_all_text_btn_close') }}</v-btn
         >
