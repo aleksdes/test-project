@@ -1,7 +1,7 @@
-# [core]
-# 	attributesFile = ~/.gitattributes
-# 	autocrlf = true
-# 	eol = lf
-# 	excludesfile = ~/.gitignore
-#   longpaths = true
-# 	# whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+[core]
+	attributesFile = ~/.gitattributes
+	autocrlf = true
+	eol = lf
+	excludesfile = ~/.gitignore
+  longpaths = true
+	# whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
