@@ -51,11 +51,12 @@ v-form.add-contact.d-flex.flex-column.justify-start(
       .add-contact__item.d-flex.flex-column(style="width: 100%;")
         v-text-field.myInput.mr-3(
           v-model="phone.value"
-          :rules="dataUser.phones.length === 1 || index===0 ? phoneReqRules() : phoneRules()"
-          placeholder="Телефон"
+          :rules="phoneRules()"
+          placeholder="+79612294644"
           required
           outlined
           dense
+          maxlength="12"
           height="40px"
         )
           template(v-slot:message='{key, message}')
@@ -105,7 +106,7 @@ v-form.add-contact.d-flex.flex-column.justify-start(
       .add-contact__item.d-flex.flex-column(style="width: 100%;")
         v-text-field.myInput.mr-3(
           v-model="email.value"
-          :rules="emailReqRules()"
+          :rules="emailRules()"
           placeholder="Email"
           required
           outlined

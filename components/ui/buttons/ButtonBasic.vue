@@ -1,5 +1,5 @@
-<template>
-  <v-btn
+<template lang="pug">
+  v-btn(
     class="btn-basic"
     :input-value="slotData ? slotData.value : false"
     v-bind="slotData ? slotData.attrs : false"
@@ -15,14 +15,10 @@
     :disabled="disabled"
     v-on="slotData ? slotData.on : false"
     @click.stop="$emit('click')"
-  >
-    <slot name="button-icon-before"></slot>
-    <span
-      :style="{ fontWeight: textFontWeight, textTransform: textTransform }"
-      v-html="$t(text)"
-    ></span>
-    <slot name="button-icon-after"></slot>
-  </v-btn>
+  )
+    slot(name="button-icon-before")
+    span(:style="{ fontWeight: textFontWeight, textTransform: textTransform }" v-html="$t(text)")
+    slot(name="button-icon-after")
 </template>
 
 <script>

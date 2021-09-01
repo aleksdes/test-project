@@ -20,7 +20,7 @@ v-hover(
     a.contact-card__link-external(:href='"mailto:"+`${dataUser.emails[0]}`')
       button-basic.align-center.mr-2(
         hover="rgba(77, 76, 172, 0.1)"
-        background="#fff"
+        :background="activeView == dataUser.id ? 'rgba(77, 76, 172, 0.1)' : '#fff'"
         width="40px"
         height="40px"
         borderRadius="10px"
@@ -34,7 +34,7 @@ v-hover(
     a.contact-card__link-external(:href='"tel:"+`${dataUser.phones[0]}`')
       button-basic.align-center.mr-2(
         hover="rgba(77, 76, 172, 0.1)"
-        background="#fff"
+        :background="activeView == dataUser.id ? 'rgba(77, 76, 172, 0.1)' : '#fff'"
         width="40px"
         height="40px"
         borderRadius="10px"
@@ -52,7 +52,7 @@ v-hover(
         button-basic.align-center(
           :slotData="slotData"
           hover="rgba(77, 76, 172, 0.1)"
-          background="#fff"
+          :background="activeView == dataUser.id ? 'rgba(77, 76, 172, 0.1)' : '#fff'"
           width="40px"
           height="40px"
           borderRadius="10px"
@@ -71,7 +71,6 @@ v-hover(
         )
           p.action-menu__title {{action.title}}
 
-    
 </template>
 
 <script>

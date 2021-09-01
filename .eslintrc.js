@@ -21,7 +21,7 @@ module.exports = {
     sourceType: 'module'
   },
 
-  plugins: ['vue', 'prettier'],
+  plugins: ['vue'],
 
   rules: {
     'prettier/prettier': [
@@ -30,6 +30,7 @@ module.exports = {
         singleQuote: true,
         jsxSingleQuote: true,
         arrowParens: 'avoid',
+        printWidth: 80,
         tabWidth: 2,
         useTabs: false
       }

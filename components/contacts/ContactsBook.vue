@@ -60,9 +60,11 @@
           p.sort-items__title-selection(:class="item.id === selectSort[selectionSort].id? 'sort-items__title-selection_active': ''") {{item.title}}
 
   #list-contacts.box-items.d-flex.flex-column.align-center
+    p.box-items__not-data(v-if="!dataContacts.length") Нет данных
     .box-items__item(
       v-for="contact in dataContacts"
       :key="contact.id"
+      v-if="dataContacts.length"
     )
       contact-card(:dataUser="contact" @delete:item-contact="deleteContactById" :disabled="allContactsDisabled" :activeView="activeViewContact")
 </template>
@@ -264,6 +266,11 @@ export default {
 };
 </script>
 
+<style lang="sass">
+.search-contacts
+  @include placeholder(16px,700,#1A1C1D)
+</style>
+
 <style lang="sass" scoped>
 @import '@/assets/variables.sass'
 
@@ -346,6 +353,11 @@ p,span,li
 
   &__item
     width: 100%
+
+  &__not-data
+    font-size: 14px
+    font-style: italic
+    color: #8083A3
 
 .v-menu__content[role="sort-menu"]
   z-index: 10 !important

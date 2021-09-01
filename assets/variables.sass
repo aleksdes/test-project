@@ -27,3 +27,8 @@ $extraLarge: 1904px
 		@media only screen and (min-width: $large) 
 			@content 
 
+@mixin placeholder($fs, $fw, $ct)
+	.v-text-field input::placeholder
+		color: $ct
+		font-size: $fs
+		font-weight: $fw 
