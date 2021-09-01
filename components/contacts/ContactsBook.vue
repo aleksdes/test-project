@@ -87,11 +87,10 @@ export default {
       },
       searchContacts: '',
       dataContacts: [],
-      dataContactsFromScrolling: [],
       selectionSort: 0,
       sortDir: '',
       page: 1,
-      perPage: 20,
+      perPage: 10,
       selectSort: [
         { id: 'name', value: 'name', title: 'Имя' },
         { id: 'role', value: 'role', title: 'Роль' }
@@ -147,27 +146,49 @@ export default {
 
     // const element = document.getElementById('list-contacts');
     // element.addEventListener('scroll', this.handleScroll);
-    // this.handleScroll();
 
-    this.getContacts();
+    await this.getContacts();
+    // this.handleScroll();
   },
 
   methods: {
     ...mapActions(['setSelectedContact']),
 
-    // handleScroll() {
-    //   const scrollHeight = document.getElementById('list-contacts')
-    //     .scrollHeight;
-    //   const scrollTop = document.getElementById('list-contacts').scrollTop;
-    //   const offsetHeight = document.getElementById('list-contacts')
-    //     .offsetHeight;
-
-    //   if (scrollTop >= scrollHeight - offsetHeight) {
-    //     if (this.page * this.perPage >= this.lengthArrContacts) return;
-    //     this.page++;
-    //     this.getContactMitDelay();
-    //   }
-    // },
+    handleScroll() {
+      const scrollHeight = document.getElementById('list-contacts')
+        .scrollHeight;
+      const scrollTop = document.getElementById('list-contacts').scrollTop;
+      const offsetHeight = document.getElementById('list-contacts')
+        .offsetHeight;
+      console.log(
+        this.dataContacts.length,
+        this.lengthArrContacts,
+        scrollTop,
+        scrollHeight - offsetHeight,
+        scrollHeight,
+        offsetHeight,
+        this.page,
+        this.dataContacts
+      );
+      if (scrollHeight <= offsetHeight) {
+        console.log(
+          this.dataContacts.length,
+          this.lengthArrContacts,
+          scrollTop,
+          scrollHeight - offsetHeight,
+          this.page
+        );
+        // this.dataContacts = [];
+        this.page++;
+        this.getContactMitDelay();
+        return;
+      }
+      if (scrollTop >= scrollHeight - offsetHeight) {
+        if (this.dataContacts.length == this.lengthArrContacts) return;
+        this.page++;
+        this.getContactMitDelay();
+      }
+    },
 
     async getContacts() {
       const params = {
@@ -199,7 +220,6 @@ export default {
           };
         });
         this.lengthArrContacts = resultRespContacts.data.meta.total;
-        console.log('1');
       }
     },
 

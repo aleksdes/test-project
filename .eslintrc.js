@@ -19,7 +19,11 @@ module.exports = {
   },
   plugins: ['vue'],
   rules: {
-    'prettier/prettier': ['error', { singleQuote: true }]
+    'prettier/prettier': ['error', { singleQuote: true }],
+    'linebreak-style': [
+      'error',
+      process.platform === 'win32' ? 'windows' : 'unix'
+    ]
   },
   settings: {
     'import/resolver': {
